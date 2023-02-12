@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(3, 238, 255);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .form {
+
+        background-color: white;
+        max-width: 400px;
+        margin: auto;
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .detail {
+        width: 90%;
+    }
+
+    .descr {
+        width: 80%;
+    }
+
+    #textarea {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+        height: 30px;
+        background-color: green;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <h1 class="center">Survey Form</h1>
+    <form action="#" class="form">
+        Name <br>
+        <input type="text" class="detail" placeholder="Enter your name"> <br>
+        Email <br>
+        <input type="text" class="detail" placeholder="Enter your email"> <br>
+        Age <br>
+        <input type="text" class="detail" placeholder="Enter your Age"> <br>
+
+        Which option best describes you? <br>
+        <select name="option" id="option" class="descr">
+            <option value="Student">Student</option>
+            <option value="Engineer">Intern</option>
+            <option value="Teacher">Professional</option>
+            <option value="clerk">Other</option>
+        </select>
+        <br>
+        Would you recommand any softwares to a friend? <br>
+        <input type="radio" name="software"> Yes <br>
+        <input type="radio" name="software"> No <br>
+        <input type="radio" name="software"> Maybe <br>
+
+        Language and Frameworks known (check all that appy) <br>
+        <input type="checkbox"> C <br>
+        <input type="checkbox"> C++ <br>
+        <input type="checkbox"> C# <br>
+        <input type="checkbox"> Java <br>
+        <input type="checkbox"> Python <br>
+        <input type="checkbox"> JavaScript <br>
+        <input type="checkbox"> React <br>
+        <input type="checkbox"> Angular <br>
+        <input type="checkbox"> Django <br>
+        <input type="checkbox"> Spring <br>
+
+        Any comment or suggestion <br>
+        <textarea name="textArea" id="textarea" cols="30" rows="10"></textarea>
+
+        <button class="btn" onclick="thankyou()">Submit</button>
+
+    </form>
+</body>
+
+<script>
+    function thankyou() {
+        alert("Thank You for submiting the form!!!!")
+
+    }
+</script>
+
+</html>
